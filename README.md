@@ -8,7 +8,7 @@
 
 | 문서 | 한국어 | English |
 |------|--------|---------|
-| 소개 | [/](https://modulabsrapidslab.github.io/guam_tutorials/) | [/en/](https://modulabsrapidslab.github.io/guam_tutorials/ko/) |
+| 소개 | [/ko/](https://modulabsrapidslab.github.io/guam_tutorials/ko/) | [/](https://modulabsrapidslab.github.io/guam_tutorials/) |
 | 빠른 시작 | [보기](https://modulabsrapidslab.github.io/guam_tutorials/ko/tutorials/quickstart/) | [view](https://modulabsrapidslab.github.io/guam_tutorials/tutorials/quickstart/) |
 | 벤치마크 실행 | [보기](https://modulabsrapidslab.github.io/guam_tutorials/ko/tutorials/benchmark/) | [view](https://modulabsrapidslab.github.io/guam_tutorials/tutorials/benchmark/) |
 | TabularAutoML API | [보기](https://modulabsrapidslab.github.io/guam_tutorials/ko/reference/tabular-automl/) | [view](https://modulabsrapidslab.github.io/guam_tutorials/reference/tabular-automl/) |
@@ -57,7 +57,7 @@ uv run mkdocs serve
 **Hosting repository for the GUAM documentation site.**
 
 Live site: **https://modulabsrapidslab.github.io/guam_tutorials/**
-(Korean at `/`, English at `/en/`.)
+(English at `/`, Korean at `/ko/`.)
 
 GUAM is a stacked-ensemble AutoML that ports the LightAutoML tabular architecture onto
 NVIDIA RAPIDS (cuDF, cuPy, cuML), running the whole pipeline on the GPU.
