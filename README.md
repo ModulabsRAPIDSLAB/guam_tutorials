@@ -8,10 +8,10 @@
 
 | 문서 | 한국어 | English |
 |------|--------|---------|
-| 소개 | [/](https://modulabsrapidslab.github.io/guam_tutorials/) | [/en/](https://modulabsrapidslab.github.io/guam_tutorials/en/) |
-| 빠른 시작 | [보기](https://modulabsrapidslab.github.io/guam_tutorials/tutorials/quickstart/) | [view](https://modulabsrapidslab.github.io/guam_tutorials/en/tutorials/quickstart/) |
-| 벤치마크 실행 | [보기](https://modulabsrapidslab.github.io/guam_tutorials/tutorials/benchmark/) | [view](https://modulabsrapidslab.github.io/guam_tutorials/en/tutorials/benchmark/) |
-| TabularAutoML API | [보기](https://modulabsrapidslab.github.io/guam_tutorials/reference/tabular-automl/) | [view](https://modulabsrapidslab.github.io/guam_tutorials/en/reference/tabular-automl/) |
+| 소개 | [/](https://modulabsrapidslab.github.io/guam_tutorials/) | [/en/](https://modulabsrapidslab.github.io/guam_tutorials/ko/) |
+| 빠른 시작 | [보기](https://modulabsrapidslab.github.io/guam_tutorials/ko/tutorials/quickstart/) | [view](https://modulabsrapidslab.github.io/guam_tutorials/tutorials/quickstart/) |
+| 벤치마크 실행 | [보기](https://modulabsrapidslab.github.io/guam_tutorials/ko/tutorials/benchmark/) | [view](https://modulabsrapidslab.github.io/guam_tutorials/tutorials/benchmark/) |
+| TabularAutoML API | [보기](https://modulabsrapidslab.github.io/guam_tutorials/ko/reference/tabular-automl/) | [view](https://modulabsrapidslab.github.io/guam_tutorials/reference/tabular-automl/) |
 
 ## GUAM 이란
 
