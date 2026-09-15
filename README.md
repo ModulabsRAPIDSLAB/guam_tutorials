@@ -11,7 +11,17 @@
 | 소개 | [/ko/](https://modulabsrapidslab.github.io/guam_tutorials/ko/) | [/](https://modulabsrapidslab.github.io/guam_tutorials/) |
 | 빠른 시작 | [보기](https://modulabsrapidslab.github.io/guam_tutorials/ko/tutorials/quickstart/) | [view](https://modulabsrapidslab.github.io/guam_tutorials/tutorials/quickstart/) |
 | 벤치마크 실행 | [보기](https://modulabsrapidslab.github.io/guam_tutorials/ko/tutorials/benchmark/) | [view](https://modulabsrapidslab.github.io/guam_tutorials/tutorials/benchmark/) |
+| Colab에서 벤치마크 실행 | [보기](https://modulabsrapidslab.github.io/guam_tutorials/ko/tutorials/colab-benchmark/) | [view](https://modulabsrapidslab.github.io/guam_tutorials/tutorials/colab-benchmark/) |
+| 멀티-GPU | [보기](https://modulabsrapidslab.github.io/guam_tutorials/ko/guides/multi-gpu/) | [view](https://modulabsrapidslab.github.io/guam_tutorials/guides/multi-gpu/) |
 | TabularAutoML API | [보기](https://modulabsrapidslab.github.io/guam_tutorials/ko/reference/tabular-automl/) | [view](https://modulabsrapidslab.github.io/guam_tutorials/reference/tabular-automl/) |
+
+## 노트북
+
+| 노트북 | 열기 |
+|--------|------|
+| OpenML × GUAM 벤치마크 — 설정 셀 하나 수정 후 모두 실행 | [Colab에서 열기](https://colab.research.google.com/github/ModulabsRAPIDSLAB/guam_tutorials/blob/main/notebooks/guam_openml_benchmark_colab.ipynb) |
+
+사용법: [Colab에서 벤치마크 실행](https://modulabsrapidslab.github.io/guam_tutorials/ko/tutorials/colab-benchmark/)
 
 ## GUAM 이란
 
@@ -29,7 +39,7 @@ GPU-based Auto-ML for Robust Large Scale Computation. LightAutoML의 tabular Aut
 
 | 브랜치 | 내용 |
 |--------|------|
-| `main` | 이 README |
+| `main` | 이 README |와 `notebooks/`(Colab 링크 대상 노트북)
 | `gh-pages` | MkDocs 빌드 결과(HTML) — GitHub Pages가 서빙 |
 
 ```
@@ -59,10 +69,12 @@ uv run mkdocs serve
 Live site: **https://modulabsrapidslab.github.io/guam_tutorials/**
 (English at `/`, Korean at `/ko/`.)
 
+Notebook: [OpenML × GUAM benchmark — open in Colab](https://colab.research.google.com/github/ModulabsRAPIDSLAB/guam_tutorials/blob/main/notebooks/guam_openml_benchmark_colab.ipynb) · [how to use](https://modulabsrapidslab.github.io/guam_tutorials/tutorials/colab-benchmark/)
+
 GUAM is a stacked-ensemble AutoML that ports the LightAutoML tabular architecture onto
 NVIDIA RAPIDS (cuDF, cuPy, cuML), running the whole pipeline on the GPU.
 Main repository: [ModulabsRAPIDSLAB/GUAM](https://github.com/ModulabsRAPIDSLAB/GUAM).
 
-This repository holds build output only. The documentation sources live in `site-docs/` in
+This repository holds build output and the public copy of the Colab notebooks. The documentation sources live in `site-docs/` in
 the GUAM repository; `gh-pages` is replaced wholesale on every deploy, so do not edit it
 directly. Send documentation changes as pull requests against `site-docs/` in GUAM.
