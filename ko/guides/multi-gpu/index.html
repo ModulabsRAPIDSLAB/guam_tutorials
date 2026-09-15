@@ -10,33 +10,35 @@
       
       
       
-        <link rel="canonical" href="https://modulabsrapidslab.github.io/guam_tutorials/ko/">
+        <link rel="canonical" href="https://modulabsrapidslab.github.io/guam_tutorials/ko/guides/multi-gpu/">
       
       
+        <link rel="prev" href="../../tutorials/colab-benchmark/">
       
-        <link rel="next" href="tutorials/quickstart/">
+      
+        <link rel="next" href="../../reference/tabular-automl/">
       
       
         
-          <link rel="alternate" href="/guam_tutorials/" hreflang="en">
+          <link rel="alternate" href="../../../guides/multi-gpu/" hreflang="en">
         
-          <link rel="alternate" href="/guam_tutorials/ko/" hreflang="ko">
+          <link rel="alternate" href="./" hreflang="ko">
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>GUAM - GUAM</title>
+        <title>멀티-GPU - GUAM</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -55,13 +57,13 @@
       
     
     
-      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="../assets/guam.css">
+      <link rel="stylesheet" href="../../../assets/guam.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -86,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#guam" class="md-skip">
+        <a href="#-gpu" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -102,7 +104,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="상단/헤더">
-    <a href="./" title="GUAM" class="md-header__button md-logo" aria-label="GUAM" data-md-component="logo">
+    <a href="../../" title="GUAM" class="md-header__button md-logo" aria-label="GUAM" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -122,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GUAM
+              멀티-GPU
             
           </span>
         </div>
@@ -169,13 +171,13 @@
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="/guam_tutorials/" hreflang="en" class="md-select__link">
+            <a href="../../../guides/multi-gpu/" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/guam_tutorials/ko/" hreflang="ko" class="md-select__link">
+            <a href="./" hreflang="ko" class="md-select__link">
               한국어
             </a>
           </li>
@@ -264,7 +266,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="네비게이션" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="./" title="GUAM" class="md-nav__button md-logo" aria-label="GUAM" data-md-component="logo">
+    <a href="../../" title="GUAM" class="md-nav__button md-logo" aria-label="GUAM" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -291,37 +293,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    GUAM
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
         
   
   
@@ -337,92 +312,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="목차">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      목차
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        한 줄 사용법
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        특징
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        파이프라인
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        지원 범위
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        문서
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        프로젝트
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -486,7 +375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tutorials/quickstart/" class="md-nav__link">
+      <a href="../../tutorials/quickstart/" class="md-nav__link">
         
   
   
@@ -514,7 +403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tutorials/benchmark/" class="md-nav__link">
+      <a href="../../tutorials/benchmark/" class="md-nav__link">
         
   
   
@@ -542,7 +431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tutorials/colab-benchmark/" class="md-nav__link">
+      <a href="../../tutorials/colab-benchmark/" class="md-nav__link">
         
   
   
@@ -574,8 +463,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -586,11 +477,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -611,7 +502,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -626,10 +517,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="guides/multi-gpu/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    멀티-GPU
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -645,6 +563,98 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        설치
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        백엔드 선택
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="백엔드 선택">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#client" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        관리형 클러스터 또는 기존 Client
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#end-to-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        end-to-end 지원 범위
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        백엔드별 구현 현황
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        문제 해결
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -716,7 +726,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/tabular-automl/" class="md-nav__link">
+      <a href="../../reference/tabular-automl/" class="md-nav__link">
         
   
   
@@ -774,7 +784,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        한 줄 사용법
+        설치
       
     </span>
   </a>
@@ -785,7 +795,35 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        특징
+        백엔드 선택
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="백엔드 선택">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#client" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        관리형 클러스터 또는 기존 Client
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#end-to-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        end-to-end 지원 범위
       
     </span>
   </a>
@@ -796,7 +834,7 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        파이프라인
+        백엔드별 구현 현황
       
     </span>
   </a>
@@ -807,29 +845,7 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        지원 범위
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        문서
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        프로젝트
+        문제 해결
       
     </span>
   </a>
@@ -856,99 +872,135 @@
   
 
 
-<h1 id="guam">GUAM<a class="headerlink" href="#guam" title="Permanent link">&para;</a></h1>
-<p>GPU-based Auto-ML for Robust Large Scale Computation.</p>
-<p>LightAutoML의 tabular AutoML 아키텍처를 NVIDIA RAPIDS(cuDF·cuPy·cuML)로 포팅한
-Stacked Ensemble AutoML. 데이터 준비부터 피처 변환, 모델 탐색, 튜닝, 앙상블까지
-전 과정을 GPU 위에서 수행.</p>
+<h1 id="-gpu">멀티-GPU<a class="headerlink" href="#-gpu" title="Permanent link">&para;</a></h1>
+<p>GUAM의 단일 GPU·분산 실행 선택 방식과 현재 분산 실행 범위.</p>
 <div class="admonition warning">
-<p class="admonition-title">PyPI <code>guam</code> 은 이 프로젝트의 배포본이 아님</p>
-<p>공개 PyPI의 <code>guam==0.0.3</code> 은 이 저장소의 릴리즈가 아님. <code>pip install guam[gpu]</code> 로
-설치 불가. 현재는 소스 체크아웃 또는 CI 빌드 wheel 스냅샷만 사용.
-설치 절차는 <a href="tutorials/quickstart/">빠른 시작</a> 참조.</p>
+<p class="admonition-title">알파</p>
+<p>백엔드 선택과 클러스터 수명주기는 안정. <code>TabularAutoML</code> 을 통한 end-to-end 분산 학습은
+현재 한 가지 구성만 지원 — <a href="#end-to-end">end-to-end 지원 범위</a> 참조. 범위 밖 구성은 조용히
+축소하지 않고 명시적 오류로 거절.</p>
 </div>
-<h2 id="_1">한 줄 사용법<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">guam.automl.presets</span><span class="w"> </span><span class="kn">import</span> <span class="n">TabularAutoML</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">guam.tasks</span><span class="w"> </span><span class="kn">import</span> <span class="n">Task</span>
-
-<span class="n">automl</span> <span class="o">=</span> <span class="n">TabularAutoML</span><span class="p">(</span><span class="n">Task</span><span class="p">(</span><span class="s2">&quot;binary&quot;</span><span class="p">))</span>            <span class="c1"># compute=&quot;auto&quot; 가 기본값</span>
-<span class="n">oof</span> <span class="o">=</span> <span class="n">automl</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">train_df</span><span class="p">,</span> <span class="n">roles</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;target&quot;</span><span class="p">:</span> <span class="s2">&quot;label&quot;</span><span class="p">})</span>
-<span class="n">pred</span> <span class="o">=</span> <span class="n">automl</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">test_df</span><span class="p">)</span>
+<h2 id="_1">설치<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>uv<span class="w"> </span>sync<span class="w"> </span>--extra<span class="w"> </span>gpu<span class="w"> </span>--extra<span class="w"> </span>dist<span class="w"> </span>--extra<span class="w"> </span>dev
 </code></pre></div>
-<p><code>Reader → K-fold → MLAlgo(NN·XGBoost 등) → Blender</code> 스택의 자동 조립.
-입력은 <code>cudf.DataFrame</code>, 출력은 <code>GUAMDataset</code>. 전 구간 GPU 잔류.</p>
-<h2 id="_2">특징<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<div class="grid cards">
-<ul>
-<li>
-<p><strong>GPU 잔류</strong></p>
-<p>학습·변환·메트릭의 cuDF/cuPy 잔류. GPU→host 전송은 채점 등 측정 경계 1회로 한정.
-벤치마크 하니스가 그 불변을 실측 계수(선언이 아닌 측정).</p>
-</li>
-<li>
-<p><strong>멀티-GPU 자동 감지</strong></p>
-<p><code>compute="auto"</code> 의 환경 감지. GPU 복수면 Dask-CUDA 경로, 단일이면 기존 경로.
-Dask 지식 없이도 GUAM이 클러스터를 직접 생성·정리.</p>
-</li>
-<li>
-<p><strong>LightAutoML 1:1 이식</strong></p>
-<p>모듈·클래스·시그니처의 LightAutoML 대응. 기존 LightAutoML 문서와 지식의 재사용
-가능(tabular 한정).</p>
-</li>
-<li>
-<p><strong>공정 벤치마크 내장</strong></p>
-<p>AMLB 공식 스위트·동일 timeout·동일 fold·사후검정을 갖춘 하니스 동봉.
-GPU 실패 시 CPU 무음 폴백 없이 무효 기록.</p>
-</li>
-</ul>
-</div>
-<h2 id="_3">파이프라인<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p><img alt="GUAM 파이프라인" src="../assets/pipeline.png" /></p>
-<h2 id="_4">지원 범위<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p><code>[dist]</code> 는 Dask-CUDA·Dask Distributed·Ray 추가. cuDF·cuML은 포함하지 않으므로 <code>[gpu]</code> 와
+함께 설치.</p>
+<h2 id="_2">백엔드 선택<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>항목</th>
-<th>내용</th>
+<th><code>compute</code></th>
+<th>동작</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Task</td>
-<td><code>binary</code> · <code>multiclass</code> · <code>reg</code></td>
+<td><code>"auto"</code> (기본값)</td>
+<td>GPU 2장 이상과 <code>[dist]</code> 런타임 감지 시 Dask, 그 외 단일 GPU</td>
 </tr>
 <tr>
-<td>알고리즘</td>
-<td>XGBoost · LightGBM · CatBoost · RandomForest(cuML) · Linear(cuML) · NN(RealMLP 계열) · TabPFN/TabICL/TabM(옵션)</td>
+<td><code>"single"</code></td>
+<td>항상 프로세스 내 단일 GPU 경로 — 기본 프리셋 전체</td>
 </tr>
 <tr>
-<td>블렌딩</td>
-<td>Weighted · Nelder-Mead (주 메트릭 유형에 따른 자동 선택)</td>
-</tr>
-<tr>
-<td>실행</td>
-<td>단일 GPU · 멀티-GPU(Dask-CUDA)</td>
-</tr>
-<tr>
-<td>런타임</td>
-<td>Linux + NVIDIA CUDA 12, RAPIDS 26.2 계열 (Kaggle T4 · Colab 검증)</td>
+<td><code>"dask"</code></td>
+<td>항상 Dask. 런타임·GPU 부족 시 실패하며 단일 GPU로 폴백하지 않음</td>
 </tr>
 </tbody>
 </table>
-<h2 id="_5">문서<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>GPU가 전혀 없으면 CPU 실행 대신 <code>ImportError</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">guam.automl.presets</span><span class="w"> </span><span class="kn">import</span> <span class="n">TabularAutoML</span>
+
+<span class="n">auto</span> <span class="o">=</span> <span class="n">TabularAutoML</span><span class="p">(</span><span class="n">task</span><span class="o">=</span><span class="s2">&quot;binary&quot;</span><span class="p">,</span> <span class="n">compute</span><span class="o">=</span><span class="s2">&quot;auto&quot;</span><span class="p">)</span>
+<span class="n">single</span> <span class="o">=</span> <span class="n">TabularAutoML</span><span class="p">(</span><span class="n">task</span><span class="o">=</span><span class="s2">&quot;binary&quot;</span><span class="p">,</span> <span class="n">compute</span><span class="o">=</span><span class="s2">&quot;single&quot;</span><span class="p">,</span> <span class="n">gpu_ids</span><span class="o">=</span><span class="s2">&quot;0&quot;</span><span class="p">)</span>
+<span class="n">managed</span> <span class="o">=</span> <span class="n">TabularAutoML</span><span class="p">(</span><span class="n">task</span><span class="o">=</span><span class="s2">&quot;binary&quot;</span><span class="p">,</span> <span class="n">compute</span><span class="o">=</span><span class="s2">&quot;dask&quot;</span><span class="p">,</span> <span class="n">n_gpus</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="client">관리형 클러스터 또는 기존 Client<a class="headerlink" href="#client" title="Permanent link">&para;</a></h3>
+<p><code>n_gpus</code>(또는 <code>gpu_ids</code>) 지정 시 GUAM이 <code>LocalCUDACluster</code> 를 생성하고 <code>close()</code> 에서 정리.
+운영 중인 클러스터를 재사용하려면 해당 Client를 전달. GUAM은 자신이 만들지 않은 Client를 닫지
+않으며, worker topology의 정본이 Client이므로 <code>dask_client</code> 와 <code>n_gpus</code>·<code>gpu_ids</code> 동시 지정 불가.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">dask.distributed</span><span class="w"> </span><span class="kn">import</span> <span class="n">Client</span>
+
+<span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;tcp://scheduler:8786&quot;</span><span class="p">)</span>
+<span class="n">automl</span> <span class="o">=</span> <span class="n">TabularAutoML</span><span class="p">(</span><span class="n">task</span><span class="o">=</span><span class="s2">&quot;reg&quot;</span><span class="p">,</span> <span class="n">compute</span><span class="o">=</span><span class="s2">&quot;dask&quot;</span><span class="p">,</span> <span class="n">dask_client</span><span class="o">=</span><span class="n">client</span><span class="p">)</span>
+</code></pre></div>
+<p>작업 종료 후 <code>automl.close()</code> 호출. GUAM이 생성한 자원만 해제.</p>
+<h2 id="end-to-end">end-to-end 지원 범위<a class="headerlink" href="#end-to-end" title="Permanent link">&para;</a></h2>
+<p><code>TabularAutoML</code> 을 통한 Dask 경로의 현재 지원 범위:</p>
 <ul>
-<li><a href="tutorials/quickstart/">빠른 시작</a> — 설치부터 첫 학습까지</li>
-<li><a href="tutorials/benchmark/">벤치마크 실행</a> — OpenML 데이터셋 기준 baseline 비교</li>
-<li><a href="tutorials/colab-benchmark/">Colab에서 벤치마크 실행</a> — 설정 셀 하나 수정 후 바로 실행하는 노트북</li>
-<li><a href="guides/multi-gpu/">멀티-GPU</a> — 백엔드 선택과 현재 분산 실행 범위</li>
-<li><a href="reference/tabular-automl/">TabularAutoML API</a></li>
+<li>수치형 회귀(<code>task="reg"</code>)</li>
+<li>XGBoost 단일 모델 — <code>use_algos=["xgb"]</code></li>
+<li>K-fold 검증</li>
+<li>피처 파이프라인 없음 — <code>features="none"</code> — 및 HPO 없음</li>
 </ul>
-<h2 id="_6">프로젝트<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>입력은 Dask-cuDF frame 또는 Dask reader가 지원하는 파일 경로. 결과는 lazy <code>DaskCudfDataset</code>.
+CUDA 데이터 생성 전에 클러스터를 먼저 시작해야 하므로 예시는 파일 입력 사용.</p>
+<div class="highlight"><pre><span></span><code><span class="n">automl</span> <span class="o">=</span> <span class="n">TabularAutoML</span><span class="p">(</span>
+    <span class="n">task</span><span class="o">=</span><span class="s2">&quot;reg&quot;</span><span class="p">,</span> <span class="n">compute</span><span class="o">=</span><span class="s2">&quot;dask&quot;</span><span class="p">,</span> <span class="n">n_gpus</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+    <span class="n">general_params</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;use_algos&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;xgb&quot;</span><span class="p">],</span> <span class="s2">&quot;features&quot;</span><span class="p">:</span> <span class="s2">&quot;none&quot;</span><span class="p">,</span> <span class="s2">&quot;n_folds&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">},</span>
+<span class="p">)</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">oof</span> <span class="o">=</span> <span class="n">automl</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="s2">&quot;train.parquet&quot;</span><span class="p">,</span> <span class="n">roles</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;target&quot;</span><span class="p">:</span> <span class="s2">&quot;target&quot;</span><span class="p">})</span>
+    <span class="n">pred</span> <span class="o">=</span> <span class="n">automl</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="s2">&quot;test.parquet&quot;</span><span class="p">)</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="n">automl</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre></div>
+<p>분류·앙상블·HPO·holdout·walk-forward·refit은 Dask 경로에서 거절. <code>compute="auto"</code> 가 Dask를
+선택한 경우에도 같은 제한이 적용되므로, 멀티-GPU 장비에서 기본 프리셋 전체를 쓰려면
+<code>compute="single"</code> 지정.</p>
+<h2 id="_3">백엔드별 구현 현황<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>분산 구현은 프리셋 아래 계층에 존재. <code>DaskCudfDataset</code> 과 <code>DaskTrainValidIterator</code> 를 직접
+전달하면 사용 가능하며, <code>TabularAutoML</code> 연결은 단계적으로 진행 중.</p>
+<table>
+<thead>
+<tr>
+<th>구성요소</th>
+<th>분산 방식</th>
+<th><code>TabularAutoML</code> 경유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>XGBoost</td>
+<td><code>xgboost.dask</code></td>
+<td>지원 (위 구성 한정)</td>
+</tr>
+<tr>
+<td>LightGBM</td>
+<td><code>lightgbm.dask</code></td>
+<td>미연결</td>
+</tr>
+<tr>
+<td>RandomForest·Linear (cuML)</td>
+<td><code>cuml.dask</code></td>
+<td>미연결</td>
+</tr>
+<tr>
+<td>CatBoost</td>
+<td>단일 프로세스 내 CatBoost 자체 멀티 디바이스 학습, <code>gpu_ids</code> 로 장치 지정</td>
+<td>단일 프로세스 경로</td>
+</tr>
+<tr>
+<td>Dask-GPU 경로가 없는 모델</td>
+<td><code>RayBackend</code></td>
+<td>미연결</td>
+</tr>
+<tr>
+<td>스케줄링</td>
+<td>GPU 자원 annotation·worker 검증</td>
+<td>Dask 백엔드가 사용</td>
+</tr>
+</tbody>
+</table>
+<p>미완료: 분산 OOF 예측 위 블렌딩, 멀티-GPU 스케일링 벤치마크.</p>
+<h2 id="_4">문제 해결<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <ul>
-<li>저장소: <a href="https://github.com/ModulabsRAPIDSLAB/GUAM">github.com/ModulabsRAPIDSLAB/GUAM</a></li>
-<li>라이선스: Apache-2.0</li>
-<li>상태: alpha (0.1.0a0) — 인터페이스 변경 가능</li>
-<li>팀: 모두의연구소 RAPIDSLAB</li>
+<li><strong><code>ImportError: Numba needs NumPy 2.0 or less</code></strong> — numpy 업그레이드 발생. RAPIDS 26.2는
+  <code>numpy&lt;2.1</code> 필요. lockfile로 재설치하거나 새 환경에서 시작.</li>
+<li><strong><code>ValueError: unsupported general_params for Dask preset</code></strong> — 위 지원 범위 밖 구성.
+  <code>compute="single"</code> 사용 또는 구성 축소.</li>
+<li><strong>일부 GPU만 사용됨</strong> — <code>CUDA_VISIBLE_DEVICES</code> 확인. GUAM은 부모 프로세스의 가시성 마스크
+  안에서 <code>gpu_ids</code> 를 해석.</li>
 </ul>
 
 
@@ -1009,10 +1061,10 @@ GPU 실패 시 CPU 무음 폴백 없이 무효 기록.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "content.code.copy", "search.highlight"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.top", "content.code.copy", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

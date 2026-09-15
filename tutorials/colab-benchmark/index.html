@@ -10,17 +10,19 @@
       
       
       
-        <link rel="canonical" href="https://modulabsrapidslab.github.io/guam_tutorials/reference/tabular-automl/">
+        <link rel="canonical" href="https://modulabsrapidslab.github.io/guam_tutorials/tutorials/colab-benchmark/">
       
       
-        <link rel="prev" href="../../guides/multi-gpu/">
+        <link rel="prev" href="../benchmark/">
       
+      
+        <link rel="next" href="../../guides/multi-gpu/">
       
       
         
           <link rel="alternate" href="./" hreflang="en">
         
-          <link rel="alternate" href="../../ko/reference/tabular-automl/" hreflang="ko">
+          <link rel="alternate" href="../../ko/tutorials/colab-benchmark/" hreflang="ko">
         
       
       
@@ -29,7 +31,7 @@
     
     
       
-        <title>TabularAutoML - GUAM</title>
+        <title>Benchmarking on Colab - GUAM</title>
       
     
     
@@ -84,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tabularautoml" class="md-skip">
+        <a href="#benchmarking-on-colab" class="md-skip">
           Skip to content
         </a>
       
@@ -120,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              TabularAutoML
+              Benchmarking on Colab
             
           </span>
         </div>
@@ -173,7 +175,7 @@
           </li>
         
           <li class="md-select__item">
-            <a href="../../ko/reference/tabular-automl/" hreflang="ko" class="md-select__link">
+            <a href="../../ko/tutorials/colab-benchmark/" hreflang="ko" class="md-select__link">
               한국어
             </a>
           </li>
@@ -316,8 +318,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -328,11 +332,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -353,7 +357,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -371,7 +375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutorials/quickstart/" class="md-nav__link">
+      <a href="../quickstart/" class="md-nav__link">
         
   
   
@@ -399,7 +403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutorials/benchmark/" class="md-nav__link">
+      <a href="../benchmark/" class="md-nav__link">
         
   
   
@@ -424,10 +428,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../tutorials/colab-benchmark/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Benchmarking on Colab
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -443,6 +474,92 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before you run
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-installs-and-why" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How it installs, and why
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-the-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reading the output
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Results
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -546,8 +663,6 @@
       
   
   
-    
-  
   
   
     
@@ -560,11 +675,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
@@ -585,7 +700,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -600,37 +715,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    TabularAutoML
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../reference/tabular-automl/" class="md-nav__link">
         
   
   
@@ -646,87 +734,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#guam.automl.presets.tabular_presets.TabularAutoML" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        TabularAutoML
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="TabularAutoML">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#guam.automl.presets.tabular_presets.TabularAutoML.__init__" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        __init__
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#guam.automl.presets.tabular_presets.TabularAutoML.fit_predict" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        fit_predict
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#guam.automl.presets.tabular_presets.TabularAutoML.predict" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        predict
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#guam.automl.presets.tabular_presets.TabularAutoML.close" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        close
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -766,63 +773,68 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#guam.automl.presets.tabular_presets.TabularAutoML" class="md-nav__link">
+  <a href="#before-you-run" class="md-nav__link">
     <span class="md-ellipsis">
       
-        TabularAutoML
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="TabularAutoML">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#guam.automl.presets.tabular_presets.TabularAutoML.__init__" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        __init__
+        Before you run
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#guam.automl.presets.tabular_presets.TabularAutoML.fit_predict" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#configure" class="md-nav__link">
     <span class="md-ellipsis">
       
-        fit_predict
+        Configure
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#guam.automl.presets.tabular_presets.TabularAutoML.predict" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#how-it-installs-and-why" class="md-nav__link">
     <span class="md-ellipsis">
       
-        predict
+        How it installs, and why
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#guam.automl.presets.tabular_presets.TabularAutoML.close" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#reading-the-output" class="md-nav__link">
     <span class="md-ellipsis">
       
-        close
+        Reading the output
       
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Results
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next
+      
+    </span>
+  </a>
   
 </li>
       
@@ -846,128 +858,147 @@
   
 
 
-<h1 id="tabularautoml">TabularAutoML<a class="headerlink" href="#tabularautoml" title="Permanent link">&para;</a></h1>
-<p>The user-facing entry point. It mirrors LightAutoML's <code>TabularAutoML</code> and assembles the
-<code>Reader → Validation → MLAlgo → Blender</code> stack in a single call.</p>
-
-
-<div class="doc doc-object doc-class">
-
-
-
-<h2 id="guam.automl.presets.tabular_presets.TabularAutoML" class="doc doc-heading">
-            <code>guam.automl.presets.tabular_presets.TabularAutoML</code>
-
-
-<a href="#guam.automl.presets.tabular_presets.TabularAutoML" class="headerlink" title="Permanent link">&para;</a></h2>
-
-
-    <div class="doc doc-contents first">
-
-
-
-        <p>사용자 대면 AutoML API — LightAutoML TabularAutoML 대응.</p>
-<p>RAPIDS 타입: cudf.DataFrame 입력, GUAMDataset 출력. 예측 코드↔원본 라벨은
-<code>classes_</code> 로 노출(submission 역변환).</p>
-
-
-
-
-
-
-
-
-
-
-
-<div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-<div class="doc doc-object doc-function">
-
-
-<h3 id="guam.automl.presets.tabular_presets.TabularAutoML.__init__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">task</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">3600</span><span class="p">,</span> <span class="n">memory_limit</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span> <span class="n">gpu_ids</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">,</span> <span class="n">reader_params</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">xgb_params</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">lgbm_params</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">cat_params</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">rf_params</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">linear_params</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">nn_params</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tuning_params</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">selection_params</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">general_params</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">compute</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">dask_client</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">n_gpus</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
-
-<a href="#guam.automl.presets.tabular_presets.TabularAutoML.__init__" class="headerlink" title="Permanent link">&para;</a></h3>
-
-
-    <div class="doc doc-contents ">
-
-
-    </div>
-
+<h1 id="benchmarking-on-colab">Benchmarking on Colab<a class="headerlink" href="#benchmarking-on-colab" title="Permanent link">&para;</a></h1>
+<p>A ready-to-run Colab notebook that installs GUAM, runs the benchmark harness on OpenML
+datasets and prints a summary table. Edit one cell, then <code>Run all</code>.</p>
+<p><a class="md-button md-button--primary" href="https://colab.research.google.com/github/ModulabsRAPIDSLAB/guam_tutorials/blob/main/notebooks/guam_openml_benchmark_colab.ipynb">Open in Colab</a>
+<a class="md-button" href="https://github.com/ModulabsRAPIDSLAB/guam_tutorials/raw/main/notebooks/guam_openml_benchmark_colab.ipynb">Download .ipynb</a></p>
+<div class="admonition note">
+<p class="admonition-title">Status</p>
+<p>The notebook has been executed end to end outside Colab (CPU baseline plus a GUAM run
+correctly recorded as invalid without a GPU). A full Colab T4 run has not been recorded
+yet. The team's proven GPU environment is Kaggle T4, which the notebook's install
+approach is copied from.</p>
 </div>
-
-<div class="doc doc-object doc-function">
-
-
-<h3 id="guam.automl.presets.tabular_presets.TabularAutoML.fit_predict" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">fit_predict</span><span class="p">(</span><span class="n">train_data</span><span class="p">,</span> <span class="n">roles</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">valid_data</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span></code>
-
-<a href="#guam.automl.presets.tabular_presets.TabularAutoML.fit_predict" class="headerlink" title="Permanent link">&para;</a></h3>
-
-
-    <div class="doc doc-contents ">
-
-        <p>Select an execution backend before starting the existing fit path.</p>
-
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-function">
-
-
-<h3 id="guam.automl.presets.tabular_presets.TabularAutoML.predict" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">predict</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
-
-<a href="#guam.automl.presets.tabular_presets.TabularAutoML.predict" class="headerlink" title="Permanent link">&para;</a></h3>
-
-
-    <div class="doc doc-contents ">
-
-        <p>학습된 AutoML 로 새 데이터 예측 — 유닛 파이프라인 예측을 블렌더로 결합.</p>
-
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-function">
-
-
-<h3 id="guam.automl.presets.tabular_presets.TabularAutoML.close" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">close</span><span class="p">()</span></code>
-
-<a href="#guam.automl.presets.tabular_presets.TabularAutoML.close" class="headerlink" title="Permanent link">&para;</a></h3>
-
-
-    <div class="doc doc-contents ">
-
-        <p>Release only resources owned by the selected execution backend.</p>
-
-
-    </div>
-
-</div>
-
-
-
-  </div>
-
-    </div>
-
-</div>
+<h2 id="before-you-run">Before you run<a class="headerlink" href="#before-you-run" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>GPU runtime.</strong> <code>Runtime → Change runtime type → T4 GPU</code>.</li>
+<li><strong>Access token.</strong> The GUAM repository is private, so the notebook clones it with a token.
+   Open <code>🔑 Secrets</code> in the left sidebar, add <code>GH_TOKEN</code> with a fine-grained GitHub token that
+   has read access to <code>ModulabsRAPIDSLAB/GUAM</code>, and turn on notebook access. Without the
+   secret the notebook asks for the token once. The token is removed from the clone's remote
+   URL and from any error output.</li>
+</ol>
+<h2 id="configure">Configure<a class="headerlink" href="#configure" title="Permanent link">&para;</a></h2>
+<p>Everything you normally change is in the first code cell.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DATASETS</code></td>
+<td><code>["adult", "pendigits", "california"]</code></td>
+<td>registry names, or <code>"openml:&lt;id&gt;:&lt;task&gt;"</code></td>
+</tr>
+<tr>
+<td><code>SYSTEMS</code></td>
+<td><code>["guam", "constant"]</code></td>
+<td>systems to run; <code>constant</code>, <code>rf</code>, <code>tuned_rf</code> are the AMLB reference baselines</td>
+</tr>
+<tr>
+<td><code>FOLDS</code></td>
+<td><code>[0, 1, 2]</code></td>
+<td>holdout folds; each fold is one measurement</td>
+</tr>
+<tr>
+<td><code>TIMEOUT</code></td>
+<td><code>600</code></td>
+<td>seconds per run</td>
+</tr>
+<tr>
+<td><code>MODE</code></td>
+<td><code>"completion"</code></td>
+<td><code>completion</code> for parity, <code>budget</code> when the timeout is a time budget</td>
+</tr>
+<tr>
+<td><code>MAX_ROWS</code></td>
+<td><code>None</code></td>
+<td>stratified subsample cap for very large datasets</td>
+</tr>
+<tr>
+<td><code>CONFIG_LABEL</code></td>
+<td><code>"colab"</code></td>
+<td>tag written into every record; change it between A/B batches</td>
+</tr>
+<tr>
+<td><code>GUAM_REF</code></td>
+<td><code>"main"</code></td>
+<td>branch or tag to benchmark</td>
+</tr>
+<tr>
+<td><code>REQUIRE_GPU</code></td>
+<td><code>True</code></td>
+<td>stop at the environment check instead of recording invalid GUAM runs</td>
+</tr>
+</tbody>
+</table>
+<p><code>xgb</code>, <code>lightautoml</code>, <code>autogluon</code> and <code>h2o</code> can be added to <code>SYSTEMS</code>; the notebook installs
+them only when selected.</p>
+<h2 id="how-it-installs-and-why">How it installs, and why<a class="headerlink" href="#how-it-installs-and-why" title="Permanent link">&para;</a></h2>
+<p>The notebook does not run <code>pip install guam[gpu]</code>. A dependency-resolving install can upgrade
+numpy past 2.0, and RAPIDS 26.2 depends on a numba that then refuses to import — taking cuDF
+with it. Instead the notebook:</p>
+<ul>
+<li>checks that a GPU is visible, that cuDF and CuPy import, and that numpy is below 2.1</li>
+<li>imports GUAM from a source checkout through <code>PYTHONPATH</code>, using the RAPIDS stack already in
+  the image</li>
+<li>installs only missing lightweight packages (<code>omegaconf</code>, <code>optuna</code>, <code>scikit-learn</code>, <code>scipy</code>,
+  <code>openml</code>) with the current numpy and pandas versions pinned</li>
+</ul>
+<p>This is the same approach behind the team's Kaggle T4 suite runs.</p>
+<h2 id="reading-the-output">Reading the output<a class="headerlink" href="#reading-the-output" title="Permanent link">&para;</a></h2>
+<p>Each run is one child process of <code>python -m benchmarks.run_benchmark</code>, so one failure does not
+stop the batch. Runs that already finished successfully are skipped if you run the cell again.</p>
+<p>The summary groups runs by dataset and system:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>runs</code> / <code>ok</code></td>
+<td>runs attempted / runs with <code>status == "ok"</code></td>
+</tr>
+<tr>
+<td><code>score_mean</code> / <code>score_std</code></td>
+<td>main metric over folds — AUC is higher-is-better, log-loss and RMSE lower-is-better</td>
+</tr>
+<tr>
+<td><code>train_s</code></td>
+<td>fit plus predict time</td>
+</tr>
+<tr>
+<td><code>gpu_mb</code></td>
+<td>measured peak device memory</td>
+</tr>
+</tbody>
+</table>
+<p>Invalid runs are listed below the table with their reason. A GUAM run is never replaced by a
+CPU result; without a GPU it is recorded as invalid.</p>
+<h2 id="results">Results<a class="headerlink" href="#results" title="Permanent link">&para;</a></h2>
+<p>The last cell zips everything under <code>guam_bench_results/</code> and downloads it:</p>
+<ul>
+<li><code>records/</code> — one JSON record per system × dataset × fold, the raw evidence</li>
+<li><code>summary.csv</code>, <code>summary.md</code> — the table above</li>
+</ul>
+<p>For the full statistical report (paired tests, confidence intervals, failure policies), point
+the aggregator at the records from a GUAM checkout:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">PYTHONPATH</span><span class="o">=</span>.:scripts<span class="w"> </span>python<span class="w"> </span>-m<span class="w"> </span>benchmarks.aggregate<span class="w"> </span>--results<span class="w"> </span>guam_bench_results/records<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--treatment<span class="w"> </span>guam<span class="w"> </span>--baselines<span class="w"> </span>constant
+</code></pre></div>
+<h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../benchmark/">Running benchmarks</a> — the harness from the command line</li>
+<li><a href="../../guides/multi-gpu/">Multi-GPU</a> — what runs distributed today</li>
+</ul>
 
 
 

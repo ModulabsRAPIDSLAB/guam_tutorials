@@ -2,56 +2,84 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://modulabsrapidslab.github.io/guam_tutorials/</loc>
-        <lastmod>2026-09-01</lastmod>
+        <lastmod>2026-09-15</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://modulabsrapidslab.github.io/guam_tutorials/"/>
         <xhtml:link rel="alternate" hreflang="ko" href="https://modulabsrapidslab.github.io/guam_tutorials/ko/"/>
     </url>
     <url>
+        <loc>https://modulabsrapidslab.github.io/guam_tutorials/guides/multi-gpu/</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://modulabsrapidslab.github.io/guam_tutorials/guides/multi-gpu/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://modulabsrapidslab.github.io/guam_tutorials/ko/guides/multi-gpu/"/>
+    </url>
+    <url>
         <loc>https://modulabsrapidslab.github.io/guam_tutorials/reference/tabular-automl/</loc>
-        <lastmod>2026-09-01</lastmod>
+        <lastmod>2026-09-15</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://modulabsrapidslab.github.io/guam_tutorials/reference/tabular-automl/"/>
         <xhtml:link rel="alternate" hreflang="ko" href="https://modulabsrapidslab.github.io/guam_tutorials/ko/reference/tabular-automl/"/>
     </url>
     <url>
         <loc>https://modulabsrapidslab.github.io/guam_tutorials/tutorials/benchmark/</loc>
-        <lastmod>2026-09-01</lastmod>
+        <lastmod>2026-09-15</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://modulabsrapidslab.github.io/guam_tutorials/tutorials/benchmark/"/>
         <xhtml:link rel="alternate" hreflang="ko" href="https://modulabsrapidslab.github.io/guam_tutorials/ko/tutorials/benchmark/"/>
     </url>
     <url>
+        <loc>https://modulabsrapidslab.github.io/guam_tutorials/tutorials/colab-benchmark/</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://modulabsrapidslab.github.io/guam_tutorials/tutorials/colab-benchmark/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://modulabsrapidslab.github.io/guam_tutorials/ko/tutorials/colab-benchmark/"/>
+    </url>
+    <url>
         <loc>https://modulabsrapidslab.github.io/guam_tutorials/tutorials/quickstart/</loc>
-        <lastmod>2026-09-01</lastmod>
+        <lastmod>2026-09-15</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://modulabsrapidslab.github.io/guam_tutorials/tutorials/quickstart/"/>
         <xhtml:link rel="alternate" hreflang="ko" href="https://modulabsrapidslab.github.io/guam_tutorials/ko/tutorials/quickstart/"/>
     </url>
     <url>
         <loc>https://modulabsrapidslab.github.io/guam_tutorials/ko/</loc>
-        <lastmod>2026-09-01</lastmod>
+        <lastmod>2026-09-15</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ko" href="https://modulabsrapidslab.github.io/guam_tutorials/ko/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://modulabsrapidslab.github.io/guam_tutorials/"/>
     </url>
     <url>
+        <loc>https://modulabsrapidslab.github.io/guam_tutorials/ko/guides/multi-gpu/</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://modulabsrapidslab.github.io/guam_tutorials/ko/guides/multi-gpu/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://modulabsrapidslab.github.io/guam_tutorials/guides/multi-gpu/"/>
+    </url>
+    <url>
         <loc>https://modulabsrapidslab.github.io/guam_tutorials/ko/reference/tabular-automl/</loc>
-        <lastmod>2026-09-01</lastmod>
+        <lastmod>2026-09-15</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ko" href="https://modulabsrapidslab.github.io/guam_tutorials/ko/reference/tabular-automl/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://modulabsrapidslab.github.io/guam_tutorials/reference/tabular-automl/"/>
     </url>
     <url>
         <loc>https://modulabsrapidslab.github.io/guam_tutorials/ko/tutorials/benchmark/</loc>
-        <lastmod>2026-09-01</lastmod>
+        <lastmod>2026-09-15</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ko" href="https://modulabsrapidslab.github.io/guam_tutorials/ko/tutorials/benchmark/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://modulabsrapidslab.github.io/guam_tutorials/tutorials/benchmark/"/>
     </url>
     <url>
+        <loc>https://modulabsrapidslab.github.io/guam_tutorials/ko/tutorials/colab-benchmark/</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://modulabsrapidslab.github.io/guam_tutorials/ko/tutorials/colab-benchmark/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://modulabsrapidslab.github.io/guam_tutorials/tutorials/colab-benchmark/"/>
+    </url>
+    <url>
         <loc>https://modulabsrapidslab.github.io/guam_tutorials/ko/tutorials/quickstart/</loc>
-        <lastmod>2026-09-01</lastmod>
+        <lastmod>2026-09-15</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ko" href="https://modulabsrapidslab.github.io/guam_tutorials/ko/tutorials/quickstart/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://modulabsrapidslab.github.io/guam_tutorials/tutorials/quickstart/"/>
